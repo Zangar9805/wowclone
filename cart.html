@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoWPizza</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="heder__inner">
+                <div class="header__row">
+                    <div class="header__col">
+                        <div class="header__logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="header__delivery">
+                            <h1 class="header__title">
+                                Доставка пиццы Астана
+                            </h1>
+                            <p class="header__subtitle">
+                                59 минут или пицца бесплатно
+                            </p>
+                            <span>
+                                Действует для зелёной <a href="#" class="delivery__zone">зоны доставки</a>
+                            </span>
+                        </div>
+                        <div class="call">
+                            <h2 class="call__text">
+                                звонок по телефону
+                            </h2>
+                            <a href="tel:+77054446744">+7 (705) 444-67-44</a>
+                        </div>
+                    </div>
+
+                    <div class="header__col">
+                        <img src="img/24-hours-phone-service.png" alt="24-hours-phone-service" class="header__24">
+                        <div class="header__halal">
+                            Кухня Халал <br />
+                            Свежие и качественные продукты.
+                        </div>
+                    </div>
+                </div><!-- header__row -->
+            </div> <!-- header__inner -->
+        </div> <!-- container -->
+        <div id="head__fixed">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__col header__nav">
+                        <a href="#kombo" class="nav__link">Комбо</a>
+                        <a href="#pizza" class="nav__link">Пицца</a>
+                        <a href="#snacks" class="nav__link">Закуски</a>
+                        <a href="#desserts" class="nav__link">Десерты</a>
+                        <a href="#drinks" class="nav__link">Напитки</a>
+                        <a href="#others" class="nav__link">Другое</a>
+                        <a href="#" class="nav__link">Акции</a>
+                        <a href="#" class="nav__link">Контакты</a>
+                        <a href="#" class="nav__link">О нас</a>
+                    </div>
+        
+                    <div class="header__col aic">
+                        <div class="header__langs">
+                            <div class="header__lang current">
+                                <a href="#">RU</a>
+                            </div>
+                            <div class="header__lang">
+                                <a href="#">KZ</a>
+                            </div>
+                        </div>
+        
+                        <div class="header__cart">
+                            <div class="cart__count">0 тг</div>
+                            <div class="cart__price">0 товаров</div>
+                        </div>
+        
+                        <div class="header__button btn btn--dark">
+                            <a href="#">
+                                Корзина
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- header__row -->
+            </div>
+        </div>
+    </header>
+
+
+    <div class="content">
+        <h4 class="title">Корзина</h4>
+
+        <div id="cart-table">
+            <div class="rw-block">
+                <h4 class="rw-name">
+                    Комбо «9999»<span class="rw-diam"></span>
+                </h4>
+                <span class="rw-delete">x</span>
+                <p class="rw-kolvo">1</p>
+                <p class="rw-price">
+                    9999 тг
+                </p>
+            </div>
+            
+            <!-- <div id="rw-cmb01" class="rw-block">
+                <h4 id="rw-cmb01-nm" class="rw-name">
+                    Комбо «Трио»<span class="rw-diam"></span>
+                </h4><span id="cmb01del" class="rw-delete">x</span>
+                <p id="rw-cmb01-klv" class="rw-kolvo">1</p>
+                <p id="rw-cmb01-prc" class="rw-price" data-price="">4980 тг</p>
+            </div>
+            
+            <div id="rw-cmb05" class="rw-block">
+                <h4 id="rw-cmb05-nm" class="rw-name">
+                    Комбо Для Друзей<span class="rw-diam"></span>
+                </h4>
+                <span id="cmb05del" class="rw-delete">x</span>
+                <p id="rw-cmb05-klv" class="rw-kolvo">1</p>
+                <p id="rw-cmb05-prc" class="rw-price" data-price="">7480 тг</p>
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col aic">
+                    <div class="footer__adress">
+                        <h4>
+                            Адрес: пр. Кудайбердыулы 23, ЖК "Жигер 2"<br>
+                            ул. Бухар жырау 36, ЖК "Камал 4"
+                        </h4>
+                        <p>
+                            Работаем круглосуточно!
+                        </p>
+                    </div>
+
+                    <div class="contact">
+                        <h2 class="contact__text">
+                            звонок по телефону
+                        </h2>
+                        <a href="tel:+77054446744">+7 (705) 444-67-44</a>
+                    </div>
+                </div>
+
+                <div class="footer__mb">
+                    <div class="footer__app">
+                        <div class="footer__text">
+                            Скачайте наше приложение для смартфонов
+                        </div>
+                        <div class="app__links">
+                            <a href="#" target="_blank" class="mr15">
+                                <img src="img/android.svg" alt="Android" class="footer__img">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="img/ios.svg" alt="IOS" class="footer__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="footer__text">
+                            К оплате принимаем
+                        </div>
+                        <a href="#" target="_blank">
+                            <img src="img/visa.png" alt="VISA" class="card__img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__mb aic">
+                    <span class="site__name">
+                        WOW!Pizza
+                    </span>
+
+                    <div class="social__box">
+                        <a href="#" target="_blank"><img src="img/fb.svg" class="social__icon"></a>
+                        <a href="#" target="_blank"><img src="img/ig.svg" class="social__icon"></a>
+                        <a href="#" target="_blank"><img src="img/vk.svg" class="social__icon"></a>
+                    </div>
+                </div>
+            </div> <!-- footer__row -->
+        </div> <!-- container -->
+    </footer>
+
+</body>
+</html>

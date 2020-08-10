@@ -1,0 +1,32 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {
+
+    /* .container {
+        width: 100%;
+        padding: 0 15px;
+    } */
+
+    .product__item {
+        margin-top: 20px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .product__img {
+        height: 180px;
+    }
+}
+
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
+    
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1199px) {
+    
+}
+
+
+@media only screen and (min-device-width : 1200px) {
+    
+}
