@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/owl.carousel.min.js"></script>
     <title>WoWPizza</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/additional.css">
 </head>
 <body>
 
@@ -46,20 +53,23 @@
                         </div>
                     </div>
                 </div><!-- header__row -->
-
-                <div class="header__row" id="menu">
+            </div> <!-- header__inner -->
+        </div> <!-- container -->
+        <div id="head__fixed">
+            <div class="container">
+                <div class="header__row">
                     <div class="header__col header__nav">
-                        <a href="#" class="nav__link">Комбо</a>
-                        <a href="#" class="nav__link">Пицца</a>
-                        <a href="#" class="nav__link">Закуски</a>
-                        <a href="#" class="nav__link">Десерты</a>
-                        <a href="#" class="nav__link">Напитки</a>
-                        <a href="#" class="nav__link">Другое</a>
+                        <a href="#kombo" class="nav__link">Комбо</a>
+                        <a href="#pizza" class="nav__link">Пицца</a>
+                        <a href="#snacks" class="nav__link">Закуски</a>
+                        <a href="#desserts" class="nav__link">Десерты</a>
+                        <a href="#drinks" class="nav__link">Напитки</a>
+                        <a href="#others" class="nav__link">Другое</a>
                         <a href="#" class="nav__link">Акции</a>
                         <a href="#" class="nav__link">Контакты</a>
                         <a href="#" class="nav__link">О нас</a>
                     </div>
-
+        
                     <div class="header__col aic">
                         <div class="header__langs">
                             <div class="header__lang current">
@@ -69,12 +79,12 @@
                                 <a href="#">KZ</a>
                             </div>
                         </div>
-
+        
                         <div class="header__cart">
                             <div class="cart__count">0 тг</div>
                             <div class="cart__price">0 товаров</div>
                         </div>
-
+        
                         <div class="header__button btn btn--dark">
                             <a href="#">
                                 Корзина
@@ -82,16 +92,35 @@
                         </div>
                     </div>
                 </div> <!-- header__row -->
-            </div> <!-- header__inner -->
-        </div> <!-- container -->
+            </div>
+        </div>
     </header>
 
-    <div class="slider">
-        <!-- Coming soon -->
-        <img src="img/tovars/2018/11/Пепперони-в-подарок.jpg" alt="">
-    </div>
+    <script src="js/slider.js"></script>
+
+	<div class="carousel">
+        <ul class="carousel-inner">
+			<li>
+				<img src="img/tovars/2018/11/Пепперони-в-подарок.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/tovars/2018/11/Пепси-в-подарок.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/tovars/2020/04/Магнитик-в-подарок.jpg" alt="">
+			</li>
+			            
+		</ul> 
+	</div>  
+	<div class="carousel_mobile">
+		<div class="carousel_mobile_flex">
+			<img src="img/tovars/2018/11/Пепперони-в-подарок-м.jpg" alt="">
+			<img src="img/tovars/2018/11/Пепси-в-подарок-м.jpg" alt="">
+			<img src="img/tovars/2020/04/Магнитик-в-подарок-м.jpg" alt="">
+		</div>
+	</div>
     
-    <div class="product">
+    <div class="product" id="kombo">
         <div class="container">
             <div class="product__title title">
                 <h2>Комбо</h2>
@@ -110,7 +139,7 @@
                         3 пиццы 32 см. за 4980 тенге!<br>
                         Пицца «Маргарита» 32 см<br>
                         Пицца «Пепперони» 32 см<br>
-                        Пицца «Сырная» 32 см<br>
+                        Пицца «Сырная» 32 см
                     </p>
                     <div class="product__old_price">
                         5490 тг
@@ -127,24 +156,26 @@
 
                 <div class="product__item">
                     <div class="product__img">
-                        <img src="img/tovars/2018/11/Трио-комбо.jpg" alt="Kombo">
+                        <img src="https://wowpizza.kz/wp-content/uploads/2018/11/Комбо-9999-1.jpg" alt="Kombo">
                     </div>
                     <h3 class="product__name">
-                        Комбо «Трио»
+                        Комбо «9999»
                     </h3>
                     <p class="product__desc">
-                        Три самые популярные и вкусные пиццы по супер цене от Вау Пицца!<br>
-                        3 пиццы 32 см. за 4980 тенге!<br>
-                        Пицца «Маргарита» 32 см<br>
-                        Пицца «Пепперони» 32 см<br>
-                        Пицца «Сырная» 32 см<br>
+                        Пицца Пепперони 32 см<br>
+                        Супермясная пицца 32 см<br>
+                        Пицца 4 сезона 32 см<br>
+                        Пицца Курица и Грибы 32 см<br>
+                        Картофель фри 1 порция<br>
+                        Pepsi 2 литра<br>
+                        Куриные Крылышки 9 шт
                     </p>
                     <div class="product__old_price">
-                        5490 тг
+                        12060 тг
                     </div>
                     <div class="product__cart">
                         <div class="product__price">
-                            4980 тг
+                            9999 тг
                         </div>
                         <div class="product__btn btn">
                             В корзину
@@ -154,24 +185,25 @@
 
                 <div class="product__item">
                     <div class="product__img">
-                        <img src="img/tovars/2018/11/Трио-комбо.jpg" alt="Kombo">
+                        <img src="https://wowpizza.kz/wp-content/uploads/2018/11/Мортал-Комбо.jpg" alt="Kombo">
                     </div>
                     <h3 class="product__name">
-                        Комбо «Трио»
+                        Мортал Комбо
                     </h3>
                     <p class="product__desc">
-                        Три самые популярные и вкусные пиццы по супер цене от Вау Пицца!<br>
-                        3 пиццы 32 см. за 4980 тенге!<br>
-                        Пицца «Маргарита» 32 см<br>
-                        Пицца «Пепперони» 32 см<br>
-                        Пицца «Сырная» 32 см<br>
+                        Пицца пепперони 32 см<br>
+                        Пицца сырная 32 см<br>
+                        Салат «Греческий»<br>
+                        Порция картофеля фри<br>
+                        Сырные палочки<br>
+                        1 литр Pepsi
                     </p>
                     <div class="product__old_price">
-                        5490 тг
+                        7230 тг
                     </div>
                     <div class="product__cart">
                         <div class="product__price">
-                            4980 тг
+                            5980 тг
                         </div>
                         <div class="product__btn btn">
                             В корзину
@@ -181,24 +213,25 @@
 
                 <div class="product__item">
                     <div class="product__img">
-                        <img src="img/tovars/2018/11/Трио-комбо.jpg" alt="Kombo">
+                        <img src="https://wowpizza.kz/wp-content/uploads/2018/11/Комбо-8-вкусов.jpg" alt="Kombo">
                     </div>
                     <h3 class="product__name">
-                        Комбо «Трио»
+                        Комбо «8 вкусов»
                     </h3>
                     <p class="product__desc">
-                        Три самые популярные и вкусные пиццы по супер цене от Вау Пицца!<br>
-                        3 пиццы 32 см. за 4980 тенге!<br>
-                        Пицца «Маргарита» 32 см<br>
-                        Пицца «Пепперони» 32 см<br>
-                        Пицца «Сырная» 32 см<br>
+                        Супер комбо!<br>
+                        2 пиццы  32 см = 8 вкусов<br>
+                        16 кусков пиццы с восемью разными начинками!<br>
+                        Пицца 4 сезона 32 см<br>
+                        Пицца Кавабанга 32 см<br>
+                        Литр Pepsi
                     </p>
                     <div class="product__old_price">
-                        5490 тг
+                        5510 тг
                     </div>
                     <div class="product__cart">
                         <div class="product__price">
-                            4980 тг
+                            4480 тг
                         </div>
                         <div class="product__btn btn">
                             В корзину
@@ -208,24 +241,24 @@
 
                 <div class="product__item">
                     <div class="product__img">
-                        <img src="img/tovars/2018/11/Трио-комбо.jpg" alt="Kombo">
+                        <img src="https://wowpizza.kz/wp-content/uploads/2019/08/Комбо-для-друзей-н.jpg" alt="Kombo">
                     </div>
                     <h3 class="product__name">
-                        Комбо «Трио»
+                        Комбо Для Друзей
                     </h3>
                     <p class="product__desc">
-                        Три самые популярные и вкусные пиццы по супер цене от Вау Пицца!<br>
-                        3 пиццы 32 см. за 4980 тенге!<br>
-                        Пицца «Маргарита» 32 см<br>
-                        Пицца «Пепперони» 32 см<br>
-                        Пицца «Сырная» 32 см<br>
+                        Пицца Нежный Цыпленок 32 см<br>
+                        Пицца от Микки 32 см<br>
+                        Пицца Капричеза 32 см<br>
+                        Pepsi 1 литр 2 штуки<br>
+                        Картофель фри 2 порции<br>
                     </p>
                     <div class="product__old_price">
-                        5490 тг
+                        9220 тг
                     </div>
                     <div class="product__cart">
                         <div class="product__price">
-                            4980 тг
+                            7480 тг
                         </div>
                         <div class="product__btn btn">
                             В корзину
@@ -235,24 +268,23 @@
 
                 <div class="product__item">
                     <div class="product__img">
-                        <img src="img/tovars/2018/11/Трио-комбо.jpg" alt="Kombo">
+                        <img src="https://wowpizza.kz/wp-content/uploads/2019/08/Комбо-для-двоих-2.jpg" alt="Kombo">
                     </div>
                     <h3 class="product__name">
-                        Комбо «Трио»
+                        Комбо для Двоих
                     </h3>
                     <p class="product__desc">
-                        Три самые популярные и вкусные пиццы по супер цене от Вау Пицца!<br>
-                        3 пиццы 32 см. за 4980 тенге!<br>
-                        Пицца «Маргарита» 32 см<br>
-                        Пицца «Пепперони» 32 см<br>
-                        Пицца «Сырная» 32 см<br>
+                        Пицца Цыпленок Ранч и Сырный Цыпленок (2в1) 32 см<br>
+                        Сырные палочки 5 шт<br>
+                        Картофель фри<br>
+                        Pepsi 0,5 л — 2 шт<br>
                     </p>
                     <div class="product__old_price">
-                        5490 тг
+                        4850 тг
                     </div>
                     <div class="product__cart">
                         <div class="product__price">
-                            4980 тг
+                            4180 тг
                         </div>
                         <div class="product__btn btn">
                             В корзину
@@ -262,24 +294,24 @@
 
                 <div class="product__item">
                     <div class="product__img">
-                        <img src="img/tovars/2018/11/Трио-комбо.jpg" alt="Kombo">
+                        <img src="https://wowpizza.kz/wp-content/uploads/2019/09/Убойное-комбо.jpg" alt="Kombo">
                     </div>
                     <h3 class="product__name">
-                        Комбо «Трио»
+                        Комбо «Убойное Трио»
                     </h3>
                     <p class="product__desc">
-                        Три самые популярные и вкусные пиццы по супер цене от Вау Пицца!<br>
-                        3 пиццы 32 см. за 4980 тенге!<br>
-                        Пицца «Маргарита» 32 см<br>
-                        Пицца «Пепперони» 32 см<br>
-                        Пицца «Сырная» 32 см<br>
+                        3 крутые пиццы за 6980 тенге! <br>
+                        Пицца Дабл Пепперони 32 см<br>
+                        Пицца Сырный Цыпленок 32 см<br>
+                        Пицца Болоньезе 32 см<br>
+                        1 литр Pepsi
                     </p>
                     <div class="product__old_price">
-                        5490 тг
+                        7590 тг
                     </div>
                     <div class="product__cart">
                         <div class="product__price">
-                            4980 тг
+                            6980 тг
                         </div>
                         <div class="product__btn btn">
                             В корзину
@@ -290,24 +322,20 @@
 
                 <div class="product__item">
                     <div class="product__img">
-                        <img src="img/tovars/2018/11/Трио-комбо.jpg" alt="Kombo">
+                        <img src="https://wowpizza.kz/wp-content/uploads/2019/09/комбо-пати-min.jpg" alt="Kombo">
                     </div>
                     <h3 class="product__name">
-                        Комбо «Трио»
+                        Комбо «Пати» 10 крутых пицц
                     </h3>
                     <p class="product__desc">
-                        Три самые популярные и вкусные пиццы по супер цене от Вау Пицца!<br>
-                        3 пиццы 32 см. за 4980 тенге!<br>
-                        Пицца «Маргарита» 32 см<br>
-                        Пицца «Пепперони» 32 см<br>
-                        Пицца «Сырная» 32 см<br>
+                        Курица и Грибы, Пепперони, Нежный Цыпленок, Чизбургер, Сырная пицца, Цыпленок Ранч, Охотничья, Маргарита, BBQ и Пицца Сырный Цыпленок
                     </p>
                     <div class="product__old_price">
-                        5490 тг
+                        20200 тг
                     </div>
                     <div class="product__cart">
                         <div class="product__price">
-                            4980 тг
+                            17900 тг
                         </div>
                         <div class="product__btn btn">
                             В корзину
@@ -321,14 +349,14 @@
 
 
     <!-- Pizza -->
-    <div class="product">
+    <div class="product" id="pizza">
         <div class="container">
             <div class="product__title title">
                 <h4>Пицца</h4>
             </div>
             <div class="product__inner">
 
-                <div class="product__item">
+                <div class="product__item pizza">
                     <div class="product__img">
                         <img src="img/tovars/2018/11/Пепперони.jpg" alt="Pizza">
                     </div>
@@ -339,9 +367,9 @@
                         Колбаса из говядины, томатный соус и сыр моцарелла
                     </p>
                     <div class="product__size">
-                        <div class="product__size_button lg active">40 см</div>
-                        <div class="product__size_button md">32 см</div>
-                        <div class="product__size_button xs">25 см</div>
+                        <div class="lg active">40 см</div>
+                        <div class="md">32 см</div>
+                        <div class="xs">25 см</div>
                     </div>
                     <div class="product__cart">
                         <div class="product__price">
@@ -359,7 +387,7 @@
 
 
     <!-- Snacks -->
-    <div class="product">
+    <div class="product" id="snacks">
         <div class="container">
             <div class="product__title title">
                 <h4>Закуски</h4>
@@ -452,7 +480,7 @@
 
 
     <!-- Desserts -->
-    <div class="product">
+    <div class="product" id="desserts">
         <div class="container">
             <div class="product__title title">
                 <h4>Десерты</h4>
@@ -546,8 +574,8 @@
     </div><!-- product -->
 
 
-    <!-- Napitki -->
-    <div class="product">
+    <!-- Drinks -->
+    <div class="product" id="drinks">
         <div class="container">
             <div class="product__title title">
                 <h4>Напитки</h4>
@@ -699,7 +727,7 @@
 
 
     <!-- Others -->
-    <div class="product">
+    <div class="product" id="others">
         <div class="container">
             <div class="product__title title">
                 <h4>Другое</h4>
@@ -1020,23 +1048,46 @@
                     </div>
                 </div>
 
-                <div class="footer__col">
-                    <div class="app">
-                        <div class="app__text">
+                <div class="footer__mb">
+                    <div class="footer__app">
+                        <div class="footer__text">
                             Скачайте наше приложение для смартфонов
                         </div>
                         <div class="app__links">
+                            <a href="#" target="_blank" class="mr15">
+                                <img src="img/android.svg" alt="Android" class="footer__img">
+                            </a>
                             <a href="#" target="_blank">
-                                <img src="img/android.svg" alt="Android">
+                                <img src="img/ios.svg" alt="IOS" class="footer__img">
                             </a>
                         </div>
                     </div>
-                    <div class="card"></div>
+                    <div class="card">
+                        <div class="footer__text">
+                            К оплате принимаем
+                        </div>
+                        <a href="#" target="_blank">
+                            <img src="img/visa.png" alt="VISA" class="card__img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__mb aic">
+                    <span class="site__name">
+                        WOW!Pizza
+                    </span>
+
+                    <div class="social__box">
+                        <a href="#" target="_blank"><img src="img/fb.svg" class="social__icon"></a>
+                        <a href="#" target="_blank"><img src="img/ig.svg" class="social__icon"></a>
+                        <a href="#" target="_blank"><img src="img/vk.svg" class="social__icon"></a>
+                    </div>
                 </div>
             </div> <!-- footer__row -->
         </div> <!-- container -->
     </footer>
 
+    <script src="js/index.js"></script>
 
 </body>
 </html>
