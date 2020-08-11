@@ -5,15 +5,53 @@
         padding: 0 15px;
     } */
 
+    header {
+        display: none;
+    }
+
+    #head__fixed {
+        display: none;
+    }
+
     .product__item {
-        margin-top: 20px;
+        margin: 20px 0;
         width: 100%;
-        padding: 0 15px;
+        height: 560px;
+        padding: 0 5px;
+    }
+
+    .product__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .product__img img {
+        width: 100%;
+        /* height: 400px; */
+    }
+
+    .product__name {
+        margin-top: 70px;
+        height: 30px;
+    }
+
+    .service__col {
+        width: 100%;
+    }
+
+    .about__item {
+        width: 100%;
     }
 
     .product__img {
         height: 180px;
     }
+
+    .footer__col, .footer__mb {
+        display: block;
+    }    
 }
 
 

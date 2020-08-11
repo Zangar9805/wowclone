@@ -311,7 +311,7 @@ a {
 
 .product__name {
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 0 0;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -432,6 +432,7 @@ a {
 
 .service__inner {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -15px;
 }
 
@@ -472,6 +473,7 @@ a {
 
 .about__col {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about__item {
@@ -516,6 +518,7 @@ footer {
 .footer__col {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__adress h4 {
