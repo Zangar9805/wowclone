@@ -85,13 +85,17 @@ a {
 /* Header ================================ */
 
 .header {
-    padding-top: 20px;
+    position: relative;
+}
+
+.header__mob {
+    display: none;
 }
 
 .header__inner {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 
 .header__row {
@@ -266,6 +270,10 @@ a {
     padding: 0 15px;
     line-height: 40px;
     font-weight: 500;
+}
+
+.carousel_mobile {
+    display: none;
 }
 
 
@@ -556,6 +564,7 @@ footer {
 }
 
 .footer__mb {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px 0;

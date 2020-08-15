@@ -38,4 +38,21 @@ jQuery(function($) {
     });
 });
 
+$(function(){
+    $('.hamb').click(function(){
+      $('.mobile').animate({
+      left: 0
+      });
+  $(this).hide();
+   $('.overlay').fadeIn();
+  });
+  $('.mobile span, .overlay').click(function(){
+    $('.mobile').animate({
+      left: -250
+    });
+  $('.hamb').show();
+  $('.overlay').fadeOut();
+  });
+  });
+
 pizzaSize(pizzas);

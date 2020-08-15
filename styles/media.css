@@ -1,35 +1,291 @@
+/* 
+
+    Верстаете сначала для самых маленьких, смотрите, чтобы одинаково выглядело для 320-479px.
+    Дальше планшеты 480-767px.
+    Потом маленькие мониторы 768-1199px.
+    И дальше min-width: 1200px для больших мониторов. 
+
+*/
+
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 479px) {
-
-    /* .container {
-        width: 100%;
-        padding: 0 15px;
-    } */
-
-    header {
+    .carousel {
         display: none;
     }
 
-    #head__fixed {
+    .header__mob {
+        display: block;
+    }
+
+    .header__inner {
         display: none;
+    }
+
+    .header__24 {
+        display: none;
+    }
+
+    .header__halal {
+        display: none;
+    }
+
+    .call a {
+        float: right;
+    }
+
+    #head__fixed .aic {
+        display: none;
+    }
+
+    .header__nav {
+        overflow: scroll;
+    }
+
+    .mobile{
+		width: 245px;
+		height: 100vh;
+		background: #fff;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+        top: 0;
+        margin-top: -10px;
+		left: -250px;
+		padding: 110px 15px 15px;
+		font-size: 25px;
+		z-index: 2;
+        color: #000;
+        list-style-type: none;
+ 
+	}
+ 
+	.mobile li{
+		margin-bottom: 20px;
+    }
+    
+    .mobile li img {
+        width: 80px;
+    }
+
+    .mobile li:first-child {
+        margin-bottom: -45px;
+    }
+
+	.mobile li:last-child{
+		margin-bottom: 0px;
+	}
+	.mobile span{
+		display: block;
+		position: absolute;
+		top: 8px;
+		left: 20px;
+		font-size: 60px;
+		transform: rotate(45deg);
+		color: #f90;
+	}
+
+    .hamb{
+        display: block;
+        font-size: 35px;
+        color: #f90;
+        margin-right: 15px;
+    }
+
+    .ls {
+        display: none;
+    }
+
+    .product{
+        padding: 0 10px;
     }
 
     .product__item {
         margin: 20px 0;
         width: 100%;
-        height: 560px;
+        /* height: 680px; */
         padding: 0 5px;
     }
-
+    
     .product__img {
+        margin-top: 50px;
+        display: block;
+        float: left;
+        width: 150px;
+        text-align: center;
+    }
+
+    .product__img img {
+        width: 120px;
+        height: auto;
+    }
+
+    #kombo .product__img {
+        float: none;
+        margin-top: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
 
+    #kombo .product__img img {
+        width: 100%;
+    }
+
+
+
+    .product__name {
+        margin-top: 70px;
+        height: 30px;
+    }
+
+    .service__col {
+        width: 100%;
+    }
+
+    .about__item {
+        width: 100%;
+    }
+
+    .product__img {
+        height: 180px;
+    }
+
+    .service__map {
+        padding: 15px 50px 0 0;
+    }
+
+    .footer__col, .footer__mb {
+        display: block;
+    } 
+    
+    .footer__mb .social__box {
+        float: right;
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
+    
+    .container {
+        width: 440px;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .header__mob {
+        display: block;
+    }
+
+    .header__inner {
+        display: none;
+    }
+
+    .header__24 {
+        display: none;
+    }
+
+    .header__halal {
+        display: none;
+    }
+
+    .call a {
+        float: right;
+    }
+
+    #head__fixed .aic {
+        display: none;
+    }
+
+    .header__nav {
+        overflow: scroll;
+    }
+
+    .mobile{
+		width: 245px;
+		height: 100vh;
+		background: #fff;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+        top: 0;
+        margin-top: -10px;
+		left: -250px;
+		padding: 110px 15px 15px;
+		font-size: 25px;
+		z-index: 2;
+        color: #000;
+        list-style-type: none;
+ 
+	}
+ 
+	.mobile li{
+		margin-bottom: 20px;
+    }
+    
+    .mobile li img {
+        width: 80px;
+    }
+
+    .mobile li:first-child {
+        margin-bottom: -45px;
+    }
+
+	.mobile li:last-child{
+		margin-bottom: 0px;
+	}
+	.mobile span{
+		display: block;
+		position: absolute;
+		top: 8px;
+		left: 20px;
+		font-size: 60px;
+		transform: rotate(45deg);
+		color: #f90;
+	}
+
+    .hamb{
+        display: block;
+        font-size: 35px;
+        color: #f90;
+        margin-right: 15px;
+    }
+
+    .ls {
+        display: none;
+    }
+
+    .product{
+        padding: 0 10px;
+    }
+
+    .product__item {
+        margin: 20px 0;
+        width: 50%;
+        /* height: 680px; */
+        padding: 0 5px;
+    }
+
+    .product__img {
+        float: none;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
     .product__img img {
         width: 100%;
-        /* height: 400px; */
     }
 
     .product__name {
@@ -49,22 +305,176 @@
         height: 180px;
     }
 
+    .service__map {
+        padding: 15px 50px 0 0;
+    }
+
     .footer__col, .footer__mb {
         display: block;
-    }    
-}
+    } 
 
-
-@media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
+    .contact {
+        text-align: left;
+    }
     
+    .footer__mb .social__box {
+        float: right;
+    }
 }
-
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1199px) {
     
+    .container {
+        width: 670px;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .header__mob {
+        display: block;
+    }
+
+    .header__inner {
+        display: none;
+    }
+
+    .header__24 {
+        display: none;
+    }
+
+    .header__halal {
+        display: none;
+    }
+
+    .call a {
+        float: right;
+    }
+
+    #head__fixed .aic {
+        display: none;
+    }
+
+    .header__nav {
+        overflow: scroll;
+    }
+
+    .mobile{
+		width: 245px;
+		height: 100vh;
+		background: #fff;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+        top: 0;
+        margin-top: -10px;
+		left: -250px;
+		padding: 110px 15px 15px;
+		font-size: 25px;
+		z-index: 2;
+        color: #000;
+        list-style-type: none;
+ 
+	}
+ 
+	.mobile li{
+		margin-bottom: 20px;
+    }
+    
+    .mobile li img {
+        width: 80px;
+    }
+
+    .mobile li:first-child {
+        margin-bottom: -45px;
+    }
+
+	.mobile li:last-child{
+		margin-bottom: 0px;
+	}
+	.mobile span{
+		display: block;
+		position: absolute;
+		top: 8px;
+		left: 20px;
+		font-size: 60px;
+		transform: rotate(45deg);
+		color: #f90;
+	}
+
+    .hamb{
+        display: block;
+        font-size: 35px;
+        color: #f90;
+        margin-right: 15px;
+    }
+
+    .ls {
+        display: none;
+    }
+
+    .product{
+        padding: 0 10px;
+    }
+
+    .product__item {
+        margin: 20px 0;
+        width: 50%;
+        /* height: 680px; */
+        padding: 0 5px;
+    }
+
+    .product__img {
+        float: none;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .product__img img {
+        width: 100%;
+    }
+
+    #drinks .product__item {
+        width: 25%;
+    }
+
+    #drinks img {
+        width: 90%;
+    }
+
+    .product__name {
+        margin-top: 70px;
+        height: 30px;
+    }
+
+    .service__col {
+        width: 28%;
+    }
+
+    .about__item {
+        width: 100%;
+    }
+
+    .product__img {
+        height: 180px;
+    }
+
+    .service__map {
+        padding: 15px 50px 0 0;
+    }
+
 }
 
-
 @media only screen and (min-device-width : 1200px) {
-    
+    .carousel_mobile {
+        display: none;
+    }
 }
