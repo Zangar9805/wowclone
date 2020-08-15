@@ -1,31 +1,35 @@
-var pizzas = document.querySelectorAll(".pizza")
+// var pizzas = document.querySelectorAll(".pizza")
 
-// console.log()
+console.log(document.getElementsByClassName("md"))
 
-function pizzaSize(p) {
-    for (var pizza of p) {
-        pizza.querySelector(".product__size").children[0].addEventListener("click", ()=>{
-            pizza.querySelector(".product__img").children[0].style.width = "100%";
-            pizza.querySelector(".product__size").children[0].classList.add("active")
-            pizza.querySelector(".product__size").children[1].classList.remove("active")
-            pizza.querySelector(".product__size").children[2].classList.remove("active")
-        })
-    
-        pizza.querySelector(".product__size").children[1].addEventListener("click", ()=>{
-            pizza.querySelector(".product__img").children[0].style.width = "85%";
-            pizza.querySelector(".product__size").children[0].classList.remove("active")
-            pizza.querySelector(".product__size").children[1].classList.add("active")
-            pizza.querySelector(".product__size").children[2].classList.remove("active")
-        })
-    
-        pizza.querySelector(".product__size").children[2].addEventListener("click", ()=>{
-            pizza.querySelector(".product__img").children[0].style.width = "70%";
-            pizza.querySelector(".product__size").children[0].classList.remove("active")
-            pizza.querySelector(".product__size").children[1].classList.remove("active")
-            pizza.querySelector(".product__size").children[2].classList.add("active")
-        })
-    }
+// for (var pizza of pizzas) {
+//     pizza.querySelector(".product__size").children[0].addEventListener("click", ()=>{
+//         pizza.querySelector(".product__img").children[0].style.width = "100%";
+//         pizza.querySelector(".product__size").children[0].classList.add("active")
+//         pizza.querySelector(".product__size").children[1].classList.remove("active")
+//         pizza.querySelector(".product__size").children[2].classList.remove("active")
+//     })
+
+//     pizza.querySelector(".product__size").children[1].addEventListener("click", ()=>{
+//         pizza.querySelector(".product__img").children[0].style.width = "85%";
+//         pizza.querySelector(".product__size").children[0].classList.remove("active")
+//         pizza.querySelector(".product__size").children[1].classList.add("active")
+//         pizza.querySelector(".product__size").children[2].classList.remove("active")
+//     })
+
+//     pizza.querySelector(".product__size").children[2].addEventListener("click", ()=>{
+//         pizza.querySelector(".product__img").children[0].style.width = "70%";
+//         pizza.querySelector(".product__size").children[0].classList.remove("active")
+//         pizza.querySelector(".product__size").children[1].classList.remove("active")
+//         pizza.querySelector(".product__size").children[2].classList.add("active")
+//     })
+// }
+
+var md = function (event) {
+    console.log(event.target)
+    event.target.classList.add("active");
 }
+
 
 jQuery(function($) {
     $(window).scroll(function(){
@@ -54,5 +58,3 @@ $(function(){
   $('.overlay').fadeOut();
   });
   });
-
-pizzaSize(pizzas);

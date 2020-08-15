@@ -29,7 +29,7 @@
         display: none;
     }
 
-    .call a {
+    .call {
         float: right;
     }
 
@@ -159,6 +159,14 @@
         padding: 15px 50px 0 0;
     }
 
+    .footer__adress {
+        display: block;
+    }
+
+    .contact {
+        text-align: left;
+    }
+
     .footer__col, .footer__mb {
         display: block;
     } 
@@ -194,7 +202,7 @@
         display: none;
     }
 
-    .call a {
+    .call {
         float: right;
     }
 
@@ -336,6 +344,10 @@
         display: block;
     }
 
+    .header__mob .aic {
+        width: 100%;
+    }
+
     .header__inner {
         display: none;
     }
@@ -348,7 +360,7 @@
         display: none;
     }
 
-    .call a {
+    .call {
         float: right;
     }
 
