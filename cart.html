@@ -9,7 +9,9 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous">
     </script>
+    <script src="js/owl.carousel.min.js"></script>
     <title>WoWPizza</title>
+    <link rel="stylesheet" href="styles/additional.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/cart.css">
     <link rel="stylesheet" href="styles/media.css">
@@ -54,7 +56,7 @@
                     <div class="call">
                         <a href="tel:+77054446744">+7 (705) 444-67-44</a>
                     </div>
-                </div>
+                </div>            
             </div>
             <div class="header__inner">
                 <div class="header__row">
@@ -98,12 +100,12 @@
         <div class="container">
             <div class="header__row">
                 <div class="header__col header__nav">
-                    <a href="#kombo" class="nav__link">Комбо</a>
-                    <a href="#pizza" class="nav__link">Пицца</a>
-                    <a href="#snacks" class="nav__link">Закуски</a>
-                    <a href="#desserts" class="nav__link">Десерты</a>
-                    <a href="#drinks" class="nav__link">Напитки</a>
-                    <a href="#others" class="nav__link">Другое</a>
+                    <a href="index.html#kombo" class="nav__link">Комбо</a>
+                    <a href="index.html#pizza" class="nav__link">Пицца</a>
+                    <a href="index.html#snacks" class="nav__link">Закуски</a>
+                    <a href="index.html#desserts" class="nav__link">Десерты</a>
+                    <a href="index.html#drinks" class="nav__link">Напитки</a>
+                    <a href="index.html#others" class="nav__link">Другое</a>
                     <a href="#" class="nav__link">Акции</a>
                     <a href="#" class="nav__link">Контакты</a>
                     <a href="#" class="nav__link">О нас</a>
@@ -138,34 +140,140 @@
     <div class="content">
         <h4 class="title">Корзина</h4>
 
-        <div id="cart-table">
-            <div class="rw-block">
-                <h4 class="rw-name">
-                    Комбо «9999»<span class="rw-diam"></span>
-                </h4>
-                <span class="rw-delete">x</span>
-                <p class="rw-kolvo">1</p>
-                <p class="rw-price">
-                    9999 тг
+        <div id="cart__table">
+            
+            <div class="cart__item">
+                <div class="cart__name">
+                    Kombo "Trio"
+                </div>
+                <div class="cart__addition">
+                    <div class="cart__pieces">
+                        1
+                    </div>
+                    <div class="cart__pr">
+                        9999тг
+                    </div>
+                    <div class="cart__close">&times;</div>
+                </div>
+            </div>
+
+            <div class="cart__item">
+                <div class="cart__name">
+                    Kombo "Trio"
+                </div>
+                <div class="cart__addition">
+                    <div class="cart__pieces">
+                        1
+                    </div>
+                    <div class="cart__pr">
+                        9999тг
+                    </div>
+                    <div class="cart__close">&times;</div>
+                </div>
+            </div>
+
+            <div class="cart__item">
+                <div class="cart__name">
+                    Kombo "Trio"
+                </div>
+                <div class="cart__addition">
+                    <div class="cart__pieces">
+                        1
+                    </div>
+                    <div class="cart__pr">
+                        9999тг
+                    </div>
+                    <div class="cart__close">&times;</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Slider -->
+
+        <div class="cart__slider">
+            <div class="slider__head">
+                <h4 class="title">Не забудьте заказать:</h4>
+                <div class="slider__nav">
+                    <img src="img/prev.png" alt="" class="slider__prev">
+                    <img src="img/next.png" alt="" class="slider__next">
+                </div>
+            </div>
+
+            <div class="slider__body">
+
+                <div class="slider__item">
+                    <img src="img/tovars/2018/11/Ролл-Бомба-1.jpg" alt="" class="slider__img">
+                    <h4 class="slider__name">Ролл «БОМБА»</h4>
+                    <div class="slider__pay">
+                        <p class="slider__price">880 тг</p>
+                        <div class="slider__cart">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <img src="img/tovars/2018/11/Крылышки-м.jpg" alt="" class="slider__img">
+                    <h4 class="slider__name">Крылышки Барбекю</h4>
+                    <div class="slider__pay">
+                        <p class="slider__price">1250 тг</p>
+                        <div class="slider__cart">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <img src="img/tovars/2018/11/Крылышки.jpg" alt="" class="slider__img">
+                    <h4 class="slider__name">Куриные крылышки</h4>
+                    <div class="slider__pay">
+                        <p class="slider__price">1350 тг</p>
+                        <div class="slider__cart">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <img src="img/tovars/2018/11/Наггетсы.jpg" alt="" class="slider__img">
+                    <h4 class="slider__name">Куриные наггетсы</h4>
+                    <div class="slider__pay">
+                        <p class="slider__price">990 тг</p>
+                        <div class="slider__cart">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pay">
+            <div class="promo">
+                <input type="text" name="promo" class="promo__code" placeholder="Введите промо-код">
+                <a href="" class="promo__check">Применить</a>
+            </div>
+            <div class="pay__end">
+                <p class="pay__text">
+                    К оплате:
                 </p>
+                <span class="pay__price">
+                    22859 тг
+                </span>
             </div>
-            
-            <!-- <div id="rw-cmb01" class="rw-block">
-                <h4 id="rw-cmb01-nm" class="rw-name">
-                    Комбо «Трио»<span class="rw-diam"></span>
-                </h4><span id="cmb01del" class="rw-delete">x</span>
-                <p id="rw-cmb01-klv" class="rw-kolvo">1</p>
-                <p id="rw-cmb01-prc" class="rw-price" data-price="">4980 тг</p>
-            </div>
-            
-            <div id="rw-cmb05" class="rw-block">
-                <h4 id="rw-cmb05-nm" class="rw-name">
-                    Комбо Для Друзей<span class="rw-diam"></span>
-                </h4>
-                <span id="cmb05del" class="rw-delete">x</span>
-                <p id="rw-cmb05-klv" class="rw-kolvo">1</p>
-                <p id="rw-cmb05-prc" class="rw-price" data-price="">7480 тг</p>
-            </div> -->
+        </div>
+
+
+        <div class="control__buttons">
+            <a href="index.html" class="big__button">
+                Вернуться в меню
+            </a>
+    
+            <a href="index.html" class="big__button">
+                Оформить заказ
+            </a>
         </div>
     </div>
 
